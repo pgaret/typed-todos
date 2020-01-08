@@ -26,7 +26,7 @@ const App: React.FC = () => {
 
   return (
     <div className={styles.app}>
-        <h1>Tasks</h1>
+        <h1>To Dos</h1>
         <TaskInput addTask={addTask} />
         <TaskList
           tasks={tasks}
