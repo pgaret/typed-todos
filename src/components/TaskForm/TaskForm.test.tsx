@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import TaskInput from './TaskInput';
+import TaskForm from './TaskForm';
 import { Props } from './types';
 
 function renderTaskInput(props: Partial<Props>) {
@@ -9,11 +9,11 @@ function renderTaskInput(props: Partial<Props>) {
     }
 
     return render(
-        <TaskInput {...defaultProps} {...props} />
+        <TaskForm {...defaultProps} {...props} />
     );
 }
 
-describe('TaskInput', () => {
+describe('TaskForm', () => {
     test('Should render component', () => {
         const { getByText } = renderTaskInput({});
         expect(getByText('Name'));

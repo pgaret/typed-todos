@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Props } from './types';
 
-const TaskInput = (props: Props) => {
+const TaskForm = (props: Props) => {
     const { addTask } = props;
     const [ value, changeValue ] = useState<string>('');
 
@@ -23,4 +23,4 @@ const TaskInput = (props: Props) => {
     )
 }
 
-export default TaskInput;
+export default TaskForm;

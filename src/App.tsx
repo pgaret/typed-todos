@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TaskInput } from './components/TaskInput';
+import { TaskForm } from './components/TaskForm';
 import { TaskList } from './components/TaskList';
 import { Task } from './components/TaskList/types';
 import styles from './App.module.scss';
@@ -27,7 +27,7 @@ const App: React.FC = () => {
   return (
     <div className={styles.app}>
         <h1>To Dos</h1>
-        <TaskInput addTask={addTask} />
+        <TaskForm addTask={addTask} />
         <TaskList
           tasks={tasks}
           deleteTask={deleteTask}
