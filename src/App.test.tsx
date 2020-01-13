@@ -37,6 +37,4 @@ describe('App', () => {
     expect(container.querySelectorAll('button').length).toEqual(1);
 
   })
-
-
 })
